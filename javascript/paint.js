@@ -11,7 +11,11 @@ const colors = [
     document.getElementById('red'),
     document.getElementById('green'),
     document.getElementById('blue'),
-    document.getElementById('black')
+    document.getElementById('black'),
+    document.getElementById('white'),
+    document.getElementById('orange'),
+    document.getElementById('brown'),
+    document.getElementById('gray')
 ]
 
 context.fillStyle = 'black'
