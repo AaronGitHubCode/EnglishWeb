@@ -1,4 +1,18 @@
-import Ball from '../typescript/ball.js'
+class Ball {
+    context 
+    x
+    y
+    up
+    left
+
+    constructor(params) {
+        this.context = params.context
+        this.x  = params.pos.x
+        this.y = params.pos.y
+        this.up = false
+        this.left = false
+    }
+}
 
 const background    = /** @type {HTMLCanvasElement} */ (document.getElementById('background'))
 
