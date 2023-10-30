@@ -1,7 +1,7 @@
 <?php 
     namespace users
     {
-        class User
+        abstract class User
         {
             private readonly int $id;
             private string $username;
@@ -45,7 +45,7 @@
             }
         }
         
-        final class PlayerUser extends User
+        class PlayerUser extends User
         {
             private int $wins;
             private int $losses;
@@ -76,7 +76,7 @@
             }
         }
 
-        final class Administrator extends User
+        final class Administrator extends PlayerUser
         {
             public function __construct(string $username, $password = null)
             {
