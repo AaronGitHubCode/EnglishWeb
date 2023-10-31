@@ -34,8 +34,20 @@
     <title>Admin Data Base</title>
 </head>
 <body>
-    <table border="1">
+    <aside>
+        <h1>Admin</h1>
+        <hr>
+        <div class="options">
+            <hr>
+            <button>Show users</button>
+            <button>Show games</button>
+            <button>Download info users</button>
+            <hr>
+        </div>
+    </aside>
+    <table border="0">
         <tr>
+            <th>Id</th>
             <th>Username</th>
             <th>Password</th>
         </tr>
@@ -44,6 +56,7 @@
             {
                 ?>
                     <tr>
+                    <td><?php echo $user->getId();?></td>
                     <td><?php echo $user->getUsername();?></td>
                     <td><?php echo $user->getPassword();?></td>
                     <td id="erase">X</td>

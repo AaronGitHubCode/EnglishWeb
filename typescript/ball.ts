@@ -1,4 +1,4 @@
-export default class Ball {
+export class Ball {
     private readonly _context: CanvasRenderingContext2D;
     
     private readonly _pos: {

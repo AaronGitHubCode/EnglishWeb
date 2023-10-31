@@ -7,10 +7,13 @@ declare reset='\033[0;00m'
 function debian_installation () {
     if [ ! -f /usr/bin/apache2 ]; then
         echo -e ''
-        apt install apache2 2> /dev/null;
+        apt install apache2 2> /dev/null
     fi
     if [ ! -f /usr/bin/mysql ]; then
-        apt install mysql;
+        apt install mysql
+    fi
+    if [! -f /usr/bin/python3.12 ]; then
+        apt install python3.12
     fi
     return 0
 }

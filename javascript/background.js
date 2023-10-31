@@ -1,4 +1,4 @@
-import Ball from '../typescript/ball.js'
+import Ball from '../typescript/ball'
 
 const background    = /** @type {HTMLCanvasElement} */ (document.getElementById('background'))
 
