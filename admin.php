@@ -56,15 +56,13 @@
             {
                 ?>
                     <tr>
-                    <td><?php echo $user->getId();?></td>
-                    <td><?php echo $user->getUsername();?></td>
-                    <td><?php echo $user->getPassword();?></td>
-                    <td id="erase">X</td>
+                    <td id="<?php echo 'id: '.$user->getId()?>"><?php echo $user->getId();?></td>
+                    <td id="<?php echo 'username: '.$user->getUsername()?>"><?php echo $user->getUsername();?></td>
+                    <td id="<?php echo 'password: '.$user->getPassword()?>"><?php echo $user->getPassword();?></td>
                     </tr>
                 <?php
             }
         ?>
     </table>
-    <script type="commonjs" src="./javascript/admin.js"></script>
 </body>
 </html>

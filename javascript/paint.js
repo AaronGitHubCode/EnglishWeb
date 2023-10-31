@@ -1,4 +1,5 @@
 const frame = /** @type {HTMLCanvasElement} */ (document.getElementById('frame'))
+
 const context = frame.getContext('2d')
 
 const clearButton = document.getElementById('clear-button')

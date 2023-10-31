@@ -29,6 +29,6 @@
             <button>Register</button>
         </div>
     </div>
-    <script type="commonjs" src="./javascript/background.js"></script>
+    <script src="./javascript/background.js"></script>
 </body>
 </html>
