@@ -1,0 +1,79 @@
+body {
+    display: grid;
+    place-content: center;
+    background-color: rgb(125, 118, 118);
+}
+
+.container {
+    margin-top: 3%;
+    display: flex;
+}
+
+.leftSide {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.leftSide button {
+    height: 80px;
+    margin-bottom: 5%;
+}
+
+button :nth-child(1){
+    width: 30%;
+}
+
+.rightSide {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: wheat;
+}
+
+.rightSide div {
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.rightSide div img {
+    width: 50%;
+    height: auto;
+}
+
+.rightSide .text {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.rightSide .lorem {
+    width: fit-content;
+    margin-right: 5%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.rightSide .playButton {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+header{
+    background-color: rgb(172, 107, 61);
+    color: white;
+   
+}
+
+footer{
+    background-color: rgb(172, 107, 61);
+    color: white;
+}
