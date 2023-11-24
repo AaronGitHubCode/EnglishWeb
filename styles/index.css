@@ -18,15 +18,6 @@ body {
     align-items: left;
 }
 
-.leftSide button {
-    height: 80px;
-    margin-bottom: 5%;
-}
-
-button :nth-child(1){
-    width: 30%;
-}
-
 .rightSide {
     width: 40%;
     height: 100%;
@@ -61,12 +52,6 @@ button :nth-child(1){
     text-align: center;
 }
 
-.rightSide .playButton {
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
 header{
     background-color: rgb(172, 107, 61);
     color: white;
@@ -76,4 +61,17 @@ header{
 footer{
     background-color: rgb(172, 107, 61);
     color: white;
+}
+
+.leftSide button {
+    height: 80px;
+    margin-bottom: 5%;
+    transition: width 0.3s ease-in-out; /* Adding a transition for the width property */
+}
+
+.playButton {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
