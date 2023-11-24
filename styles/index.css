@@ -37,7 +37,10 @@ body {
 .rightSide div img {
     width: 50%;
     height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
 
 .rightSide .text {
     margin-top: 10px;
@@ -65,8 +68,9 @@ footer{
 
 .leftSide button {
     height: 80px;
+    width: 25%;
     margin-bottom: 5%;
-    transition: width 0.3s ease-in-out; /* Adding a transition for the width property */
+    transition: width 0.3s ease-in-out;
 }
 
 .playButton {
