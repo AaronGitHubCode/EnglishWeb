@@ -1,81 +1,161 @@
 body {
-    display: grid;
-    place-content: center;
-    background-color: rgb(125, 118, 118);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2; /* New background color */
 }
 
 .container {
-    margin-top: 3%;
-    display: flex;
+  margin-top: 3%;
+  display: flex;
+  flex: 1;
 }
 
 .leftSide {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding-top: 5%;
 }
 
 .rightSide {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: wheat;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 4%;
 }
 
 .rightSide div {
-    width: 75%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+  width: 75%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .rightSide div img {
-    width: 50%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  width: 50%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 5%;
 }
 
-
 .rightSide .text {
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
+  margin-top: 50%;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  margin-right: 5%;
 }
 
 .rightSide .lorem {
-    width: fit-content;
-    margin-right: 5%;
-    font-size: 12px;
-    text-align: center;
+  margin-top: 2%;
+  width: fit-content;
+  margin-right: 5%;
+  font-size: 14px;
+  text-align: center;
+  color: black;
 }
 
-header{
-    background-color: rgb(172, 107, 61);
-    color: white;
-   
+header {
+  background-color: rgb(172, 107, 61);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjust alignment */
 }
 
-footer{
-    background-color: rgb(172, 107, 61);
-    color: white;
+header p {
+  margin-left: 5%;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 23px;
+}
+
+footer {
+  background-color: rgb(172, 107, 61);
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 43%;
+  font-size: 27px;
 }
 
 .leftSide button {
-    height: 80px;
-    width: 25%;
-    margin-bottom: 5%;
-    transition: width 0.3s ease-in-out;
+  height: 80px;
+  width: 25%;
+  margin-bottom: 5%;
+  transition: width 0.3s ease-in-out;
 }
 
 .playButton {
-    width: 150px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
+
+button{
+    max-width: 95%;
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+    border-left: none;
+    border-right: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  button:hover::before {
+    width: 160%;
+  }
