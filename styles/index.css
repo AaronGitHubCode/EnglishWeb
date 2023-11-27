@@ -1,4 +1,5 @@
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +10,11 @@ body {
 }
 
 .container {
-  margin-top: 3%;
+  position: absolute;
+  bottom: 11%;
+  left: 0;
+  right: 0;
   display: flex;
-  flex: 1;
 }
 
 .leftSide {
@@ -30,8 +33,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: white;
-  margin-top: 4%;
+  margin-top: 10%;
 }
 
 .rightSide div {
@@ -39,13 +43,14 @@ body {
   height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 30%;
 }
 
-.rightSide div img {
-  width: 50%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.rightSide img {
+  width: 75%;
+  height: 250px;
+  object-fit: cover;
   margin-top: 5%;
 }
 
@@ -59,17 +64,9 @@ body {
   margin-right: 5%;
 }
 
-.rightSide .lorem {
-  margin-top: 2%;
-  width: fit-content;
-  margin-right: 5%;
-  font-size: 14px;
-  text-align: center;
-  color: black;
-}
 
 header {
-  background-color: rgb(172, 107, 61);
+  background-color: rgb(0, 0, 0);
   color: white;
   position: fixed;
   top: 0;
@@ -87,11 +84,11 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-  margin-right: 5%; /* Adjust spacing as needed */
+  margin-right: 5%;
 }
 
 nav li {
-  margin-left: 20px; /* Adjust spacing between options */
+  margin-right: 10px;
 }
 
 nav a {
@@ -101,9 +98,8 @@ nav a {
   font-size: 16px;
 }
 
-/* Hover effect */
 nav a:hover {
-  color: purple; /* Change color on hover */
+  color: rgb(238, 39, 238);
 }
 
 header p {
@@ -114,14 +110,14 @@ header p {
 }
 
 footer {
-  background-color: rgb(172, 107, 61);
+  background-color: rgb(0, 0, 0);
   color: white;
   position: fixed;
   width: 100%;
   height: 10%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   bottom: 0;
 }
 
@@ -129,7 +125,6 @@ footer p {
   margin: 0;
   text-align: center;
   font-weight: bolder;
-  margin-left: 43%;
   font-size: 27px;
 }
 
@@ -147,41 +142,41 @@ footer p {
   margin-top: 50px;
 }
 
-button{
-    max-width: 95%;
-    color: purple;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-top: 2px solid purple;
-    border-bottom: 2px solid purple;
-    border-left: none;
-    border-right: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    font-weight: bold;
-    background: transparent;
-    position: relative;
-    transition: all 1s;
-    overflow: hidden;
-  }
-  
-  button:hover {
-    color: white;
-  }
-  
-  button::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    top: 0;
-    left: -40px;
-    transform: skewX(45deg);
-    background-color: purple;
-    z-index: -1;
-    transition: all 1s;
-  }
-  
-  button:hover::before {
-    width: 160%;
-  }
+button {
+  max-width: 95%;
+  color: purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 2px solid rgb(238, 39, 238);
+  border-bottom: 2px solid rgb(238, 39, 238);
+  border-left: none;
+  border-right: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+button:hover {
+  color: white;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: rgb(238, 39, 238);
+  z-index: -1;
+  transition: all 1s;
+}
+
+button:hover::before {
+  width: 160%;
+}
