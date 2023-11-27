@@ -6,7 +6,7 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   margin: 0;
-  background-color: #d1b8b8;
+  background-color: #dfcccc;
 }
 
 .container {
@@ -99,7 +99,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgb(238, 39, 238);
+  color: purple; /* Change color on hover */
 }
 
 header p {
@@ -142,41 +142,41 @@ footer p {
   margin-top: 50px;
 }
 
-button {
-  max-width: 95%;
-  color: purple;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-top: 2px solid rgb(238, 39, 238);
-  border-bottom: 2px solid rgb(238, 39, 238);
-  border-left: none;
-  border-right: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-weight: bold;
-  background: transparent;
-  position: relative;
-  transition: all 1s;
-  overflow: hidden;
-}
-
-button:hover {
-  color: white;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: rgb(238, 39, 238);
-  z-index: -1;
-  transition: all 1s;
-}
-
-button:hover::before {
-  width: 160%;
-}
+button{
+    max-width: 95%;
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+    border-left: none;
+    border-right: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  button:hover::before {
+    width: 160%;
+  }
