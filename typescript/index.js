@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   button3.addEventListener("mouseenter", function () {
     updateContent(
-      "https://vgboxart.com/resources/render/11538_metal-gear-rising-revengeance-prev.png",
+      "https://i.ytimg.com/vi/fuHdpQVtpHc/mqdefault.jpg",
       "Philosophical analysis about modern society",
       function () {
         window.location.href = "PostTruth.html";
